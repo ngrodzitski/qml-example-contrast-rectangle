@@ -54,9 +54,27 @@ qt_add_qml_module(${TARGET_PROJECT}_lib
     QML_FILES
         # Actual window to open.
         qml/MyMainWindow.qml
+
+        # Custom QML Element:
+        qml/ContrastRectangle.qml
     RESOURCE_PREFIX "/"
     NO_PLUGIN
 )
+
+qt6_add_shaders(${TARGET_PROJECT}_lib "shaders"
+    GLSL "310es,330"
+    BATCHABLE
+    PRECOMPILE
+    OPTIMIZED
+    PREFIX ""
+    FILES
+        shaders/invert.frag
+        shaders/passthrough.vert
+)
+
+
+
+
 
 target_link_libraries(${TARGET_PROJECT}_lib PUBLIC
     Qt6::Core
