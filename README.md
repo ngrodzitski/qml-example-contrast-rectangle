@@ -2,6 +2,7 @@
 
 Demo showing how to create a Rectangle that will render the underlying pixels in contrast.
 
+See this [PR](https://github.com/ngrodzitski/qml-example-contrast-rectangle/pull/1) for details.
 
 ## Build
 
