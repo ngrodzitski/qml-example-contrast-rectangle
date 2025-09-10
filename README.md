@@ -8,7 +8,7 @@ See this [PR](https://github.com/ngrodzitski/qml-example-contrast-rectangle/pull
 
 ## Build
 
-An example vuild command:
+An example build command:
 
 ```bash
 cmake -B_build . -DCMAKE_PREFIX_PATH=~/qt682-debug -DCMAKE_BUILD_TYPE=Debug
